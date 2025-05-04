@@ -46,7 +46,7 @@ src/
 
 ## 📝 Author
 
-- **Dejan Pavlović** – [GitHub Profile Link]
+- **Dejan Pavlović** – github.com/Neufarian
 
 ## 📄 License
 
