@@ -53,6 +53,10 @@ public class Terrain extends Panel {
         return player;
     }
 
+    public ArrayList<Coin> getCoins() {
+        return coins;
+    }
+
     public void setPaused(boolean paused) {
         this.paused = paused;
     }
@@ -128,6 +132,7 @@ public class Terrain extends Panel {
             if (nextField.getFigure() instanceof Coin) {
                 coins.remove(nextField.getFigure());
                 SoundManager.playSound("coinCollected.wav");
+                Game.updateScore();
             }
             currField.setFigure(null);
             nextField.setFigure(player);
@@ -262,17 +267,20 @@ public class Terrain extends Panel {
     
     public void startGame() {
         FigureManager.startMovement(ghosts);
+        Game.getTimer().startTime();
         paused = false;
         requestFocus();
     }
     
     public void pauseGame() {
         FigureManager.pauseMovement(ghosts);
+        if (Game.getTimer() != null) Game.getTimer().pauseTime();
         paused = true;
     }
     
     public void endGame() {
         FigureManager.stopMovement(ghosts);
+        if (Game.getTimer() != null) Game.getTimer().stopTime();
         player = null;
     }
 

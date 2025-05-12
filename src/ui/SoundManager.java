@@ -10,7 +10,7 @@ import javax.sound.sampled.Clip;
 
 public class SoundManager {
     public static void playSound(String fileName) {
-        try (AudioInputStream audioIn = AudioSystem.getAudioInputStream(SoundManager.class.getResource("/ui/coinCollected.wav"))) {
+        try (AudioInputStream audioIn = AudioSystem.getAudioInputStream(SoundManager.class.getResource("/res/coinCollected.wav"))) {
             Clip clip = AudioSystem.getClip();
             clip.open(audioIn);
             clip.start();
