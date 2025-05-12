@@ -1,3 +1,7 @@
+/**
+ * Counts down the remaining game time and ends the game when it reaches zero.
+ */
+
 package logic;
 
 import java.awt.Label;
