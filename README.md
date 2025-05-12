@@ -1,6 +1,6 @@
 # Java Grid Game
 
-A simple grid-based 2D Java game featuring a player, ghosts, coins, and walls. The goal is to collect all the coins while avoiding ghosts. The game uses multithreading, basic AWT UI dialogs, and sound effects to enhance gameplay.
+A simple grid-based 2D Java game featuring a player, ghosts, coins, and walls. The goal is to collect all the coins while avoiding ghosts before the time runs out. The game uses multithreading, basic AWT UI dialogs, and sound effects to enhance gameplay.
 
 ## 🕹️ Features
 
@@ -11,6 +11,7 @@ A simple grid-based 2D Java game featuring a player, ghosts, coins, and walls. T
 - Sound effect when a coin is collected
 - Win and loss dialogs
 - Thread-safe game logic
+- Timer for remaining time
 
 ## 📁 Project Structure
 
