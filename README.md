@@ -22,7 +22,7 @@ src/
 ## 🚀 How to Run
 
 1. **Requirements**:  
-   - Java 17 or later  
+   - Java 8 or later  
    - Any Java IDE (e.g. IntelliJ IDEA, VSCode)
 
 2. **Build & Run**:  
@@ -46,7 +46,7 @@ src/
 
 ## 📝 Author
 
-- **Dejan Pavlović** – [GitHub Profile Link]
+- **Dejan Pavlović** – github.com/Neufarian
 
 ## 📄 License
 
